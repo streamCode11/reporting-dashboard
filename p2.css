@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+     margin:0 ;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+ion-icon{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+body{
+     background: #f6f3fa;
+}
+.nav{
+     height: 70px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 40px;
+     background: #efefef;
+}
+.nav > .logo {
+     font-size: 24px;
+     text-transform: capitalize;
+     font-weight: 600;
+     color: #333;
+}
+.nav > .searchBar {
+     width: 550px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     padding: 0 10px;
+     background: #efefef;
+     gap: 20px;
+}
+.searchBar > ion-icon {
+     font-size: 20px;
+     color: #333;
+}
+.searchBar  > input {
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline: none;
+}
+.searchBar  > input::placeholder {
+     font-size: 16px;
+     text-transform: capitalize;
+}
+.nav > .right {
+     display: flex;
+     align-items: center;
+     gap: 40px;
+}
+.right > .notification {
+     font-size: 20px;
+     color: #333;
+     position: relative;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+}
+.right > .notification > span {
+     position: absolute;
+     height: 10px;
+     width: 10px;
+     background: #da6302;
+     left: 90%;
+     top: -3px;
+     border-radius: 50%;
+}
+.right > .avaterSide {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+}
+.right > .avaterSide > .img {
+     width: 50px;
+     height: 50px;
+}
+.right > .avaterSide > .img > img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+}
+.avaterSide > .info {
+     color: #333;
+}
+.avaterSide > .info > h4 {
+     font-size: 16px;
+     text-transform: capitalize;
+}
+.avaterSide > .info > span {
+     font-size: 14px;
+     text-transform: capitalize;
+     color: #ccc;
+}
+.right > .menu {
+     font-size: 20px;
+     color: #333;
+     background: #efefef;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 10px;
+     box-shadow: 3px 3px 34px 0 rgba(0 , 0 , 0 , 0.15);
+     border-radius: 50%;
+     cursor: pointer;
+}
+/* main section */
+.container{
+     margin: 30px 10px 100px 10px;
+     display: flex;
+     gap: 10px;
+}
+/* sidebar */
+.container > .sidebar {
+     width: 23%;
+     padding: 20px 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     position: sticky;
+     background: #efefef;
+}
+.sidebar > .label {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     line-height: 50px;
+     padding: 0 20px;
+     border-radius: 8px;
+     background: #efefef;
+     cursor: pointer;
+     transition: 0.3s ease-in;
+}
+.sidebar > .label:hover{
+     background: #5f8f8f;
+}
+.sidebar > .label:hover > a,
+.sidebar > .label:hover > .icon{
+     color: #efefef;
+     font-weight: 500;
+}
+.sidebar > .label > .icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     padding: 10px;
+     color: #333;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.sidebar > .label > a {
+     text-decoration: none;
+     color: #333;
+     font-size: 14px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+}
+/* mainContent */
+.container > .mainContent{
+     width: 77%;
+     padding: 10px 15px;
+}
+.mainContent > .mainNav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.mainNav > .mainLeft > h2{
+     color: #333;
+     font-size: 26px;
+     letter-spacing: 2px;
+     text-transform: capitalize;
+}
+.mainNav > .mainLeft > p{
+     color: #333;
+     font-size: 12px;
+     letter-spacing: 2px;
+}
+.mainNav > .plusIcon{
+     background: #5f8f8f;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #efefef;
+     box-shadow: 5px 5px 34px 0 rgba(95, 143, 143 , 0.15);
+     border-radius: 5px;
+     font-size: 18px;
+}
+.filter{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 60px;
+     width: 100%;
+}
+.filLeft {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+}
+.filLeft > .filterBtn {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     transition: 0.3s ease;
+     cursor: pointer;
+}
+.filterBtn > p {
+     text-transform: capitalize;
+     color: #333;
+     font-size: 14px;
+     letter-spacing: 1px;
+}
+.filterBtn > span {
+     font-size: 14px;
+     color: #333;
+     padding: 5px;
+     border-radius: 5px;
+     border: 2px solid transparent;
+     transition: 0.3s ease-in-out;
+}
+.filterBtn:hover > span {
+     border: 2px solid #5f8f8f;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #5f8f8f;
+     background: #daecec;
+     border-radius: 5px;
+}
+
+.filter > .filRight {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 20px;
+}
+.filRight > .moreBtn {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     cursor: pointer;
+     background: #efefef;
+     box-shadow: 5px 10px 34px 0 rgba(0 , 0 , 0 , 0.15);
+     padding: 7px 15px;
+     border-radius: 7px;
+}
+.moreBtn > p {
+     font-size: 12px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+}
+.filRight > .view {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+}
+.filRight > .view > ion-icon {
+     padding: 10px ;
+     background: #efefef;
+     box-shadow: 5px 10px 34px 0 rgba(0 , 0 , 0 , 0.15);
+     border-radius: 7px;
+}
+/* main card */
+.mainCard{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-top: 40px;
+     gap: 30px;
+}
+.mainCard > .card {
+     height: auto;
+     width: 200px;
+     box-shadow: 7px 7px 34px 0 rgba(0 , 0 , 0 , 0.15);
+     padding: 10px 15px ;
+     border-radius: 10px;
+}
+.card > .icon{
+     background: var(--bg);
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     color: #efefef;
+     margin-top: -30px;
+     margin-bottom: 10px;
+}
+.card > h3 {
+     font-size: 14px;
+     text-transform: capitalize;
+     font-weight: 700;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+.card > .detail {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-bottom: 20px;
+}
+.card > .detail > p {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     color: #3e3e3e;
+     font-size: 12px;
+     letter-spacing: 1px;
+}
+.card > .detail > p > ion-icon {
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.card > .lower {
+     display: flex;
+     justify-content: space-between;
+}
+.card > .lower > .team > p,
+.card > .lower > .progress > p{
+     font-size: 14px;
+     color: #3e3e3e;
+}
+.card > .lower > .team > .img {
+     display: flex;
+     align-items: center;
+     gap: 3px;
+}
+.card > .lower > .team > .img  > img{
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+}
+.card > .lower > .progress > span {
+     font-size: 14px;
+     color: #333;
+}

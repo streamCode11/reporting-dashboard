@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="p2.css">
+     <link rel="shortcut icon" href="./stream code 1.png" type="image/x-icon">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>dashboard UI design</title>
+</head>
+<body>
+     <div class="nav">
+          <div class="logo">
+               <h2>stream</h2>
+          </div>
+          <div class="searchBar">
+               <ion-icon name="search-outline"></ion-icon>
+               <input type="text" placeholder="search">
+          </div>
+          <div class="right">
+               <div class="notification">
+                    <span></span>
+                    <ion-icon name="notifications-outline"></ion-icon>
+               </div>
+               <div class="avaterSide">
+                    <div class="img">
+                         <img src="./img/avater.png" alt="01">
+                    </div>
+                    <div class="info">
+                         <h4>zarab Neo</h4>
+                         <span>Director</span>
+                    </div>
+               </div>
+               <div class="menu">
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+               </div>
+          </div>
+     </div>
+
+
+     <!-- main content -->
+     <div class="container">
+          <!-- sideBar -->
+          <div class="sidebar">
+               <div class="label">
+                    <div class="icon">
+                         <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <a href="*">
+                         <p>board</p>
+                    </a>
+               </div>
+               <div class="label">
+                    <div class="icon">
+                         <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>plan schedule</p>
+                    </a>
+               </div>
+               <div class="label labelActive" >
+                    <div class="icon">
+                         <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>reporting</p>
+                    </a>
+               </div>
+               <div class="label" >
+                    <div class="icon">
+                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>messages</p>
+                    </a>
+               </div>
+               <div class="label">
+                    <div class="icon">
+                         <ion-icon name="git-network-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>team member</p>
+                    </a>
+               </div>
+               <div class="label" >
+                    <div class="icon" >
+                         <ion-icon name="git-compare-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>roadmap</p>
+                    </a>
+               </div>
+               <div class="label">
+                    <div class="icon" >
+                         <ion-icon name="settings-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                         <p>setting</p>
+                    </a>
+               </div>
+          </div>
+          <!-- mainContent -->
+          <div class="mainContent">
+
+               <div class="mainNav">
+                    <div class="mainLeft">
+                         <h2>reporting</h2>
+                         <p>all project in current month</p>
+                    </div>
+                    <div class="plusIcon">
+                         <ion-icon name="add-outline"></ion-icon>
+                    </div>
+               </div>
+               
+               <div class="filter">
+                    <div class="filLeft">
+                         <div class="filterBtn">
+                              <p class="filText">all</p>
+                              <span class="filCount">78</span>
+                         </div>
+                         <div class="filterBtn">
+                              <p class="filText">starred</p>
+                              <span class="filCount">24</span>
+                         </div>
+                         <div class="filterBtn">
+                              <p class="filText">approval</p>
+                              <span class="filCount">34</span>
+                         </div>
+                         <div class="filterBtn">
+                              <p class="filText">completed</p>
+                              <span class="filCount">20</span>
+                         </div>
+                    </div>        
+                    <div class="filRight">
+                         <div class="moreBtn">
+                              <ion-icon name="options-outline"></ion-icon>
+                              <p>more</p>
+                         </div>
+                         <div class="view">
+                              <ion-icon name="apps-outline"></ion-icon>
+                              <ion-icon name="list-outline"></ion-icon>
+                         </div>
+                    </div>
+               </div>
+
+
+               <!-- cards -->
+
+               <div class="mainCard">
+                    <div class="card">
+                         <div class="icon" style="--bg:#DD761C;">
+                              <ion-icon name="phone-portrait"></ion-icon>
+                         </div>
+                         <h3>app development</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   marketing team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   2 weeks ago
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (2).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>34%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#FF0080;">
+                              <ion-icon name="laptop"></ion-icon>
+                         </div>
+                         <h3>web design</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   core UI team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   1 week left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (4).jpg" alt="">
+                                        <img src="./img/img  (2).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>63%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#FEB941;">
+                              <ion-icon name="desktop"></ion-icon>
+                         </div>
+                         <h3>landing page</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   marketing team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   1 week left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (4).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>78%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#5AB2FF;">
+                              <ion-icon name="pie-chart"></ion-icon>
+                         </div>
+                         <h3>buisness compare</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   marketing team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   1 month left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (4).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>34%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#874CCC;">
+                              <ion-icon name="card"></ion-icon>
+                         </div>
+                         <h3>checkout</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   order team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   1 month left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (2).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>57%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#55AD9B;">
+                              <ion-icon name="server"></ion-icon>
+                         </div>
+                         <h3>data staging</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   core data team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   4 weeks ago
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (2).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>96%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#D2649A;">
+                              <ion-icon name="videocam"></ion-icon>
+                         </div>
+                         <h3>campaign store</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   international communication
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   11 days left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                        <img src="./img/img  (3).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>42%</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="icon" style="--bg:#615EFC;">
+                              <ion-icon name="headset"></ion-icon>
+                         </div>
+                         <h3>asquistion mitra</h3>
+                         <div class="detail">
+                              <p>
+                                   <ion-icon name="trending-up-outline"></ion-icon>
+                                   merchant team
+                              </p>
+                              <p>
+                                   <ion-icon name="time-outline"></ion-icon>
+                                   3 weeks left
+                              </p>
+                         </div>
+                         <div class="lower">
+                              <div class="team">
+                                   <p>team</p>
+                                   <div class="img">
+                                        <img src="./img/img  (1).jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="progress">
+                                   <p>progress</p>
+                                   <span>67%</span>
+                              </div>
+                         </div>
+                    </div>
+
+                    
+
+          </div>
+     </div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./p2.js"></script>
+</body>
+</html>
